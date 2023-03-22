@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    /* div para fora */
+    padding: 0;
+    /* div para dentro */
+
+    /* border: 1px solid; */
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body {
+    background-image: url(../images/cachoeira.jpg);
+
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-size: 50% auto;
+} */
+
+body {
+    position: relative;
+}
+
+.topo {
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(101, 59, 59, 0.25);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+}
+
+.menu * {
+    border: 1px solid;
+}
+
+.menu {
+    margin: 10px 0;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.menu li {
+    margin: 0 0 0 15px;
+    background-color: red;
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li a {
+    padding: 10px 10px 10px 50px;
+
+    /* padding: top right bottom left; */
+    /* padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 50px; */
+
+    background-color: beige;
+
+    /* border: 1px solid; */
+
+    color: black;
+    text-decoration: none;
+}
+
+
+.hotel {
+    background-image: url(../images/hotel.png);
+    background-position: 10px 50%;
+    /* background-position: x y; */
+    background-repeat: no-repeat;
+    background-size: 25%;
+    /* background-size: width height; */
+}
+
+.banner {
+    margin: 82.5px 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: blanchedalmond;
+}
+
+.col-esquerda,
+.col-direita {
+    display: block;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.col-esquerda {
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h2 {
+    font-size: 80px;
+}
+
+.col-esquerda p {
+    font-size: 20px;
+}
+
+.col-direita img {
+    width: 400px;
+    height: 500px;
+    display: inline-block;
+}
+
+.ofertas {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.espacamento {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ofertas .col-esquerda {
+    background-color: bisque;
+}
+
+.ofertas .col-direita {
+    background-color: cadetblue;
+}
+
+.passo-a-passo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-passo-a-passo {
+    padding: 5px;
+    background-color: aquamarine;
+}
+
+.passo-a-passo h2,
+.passo-a-passo p {
+    margin-bottom: 10px;
+}
+
+.rodape {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu-rodape {
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-rodape li {
+    margin: 0 10px;
+}
