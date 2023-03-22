@@ -21,6 +21,15 @@ body {
     position: relative;
 }
 
+.container { 
+    max-width: 1280px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .topo {
     width: 100%;
     top: 0;
@@ -41,6 +50,12 @@ body {
 
 .menu {
     margin: 10px 0;
+
+    /* margin: top right bottom left;
+    margin: top (right/left) bottom;
+    margin: (top/bottom) (right/left) | x y;
+    margin: (top/right/bottom/left); */
+
     /* background-color: white; */
     display: flex;
     flex-direction: row;
@@ -55,7 +70,7 @@ body {
 }
 
 .menu li a {
-    padding: 10px 10px 10px 50px;
+    padding: 10px 10px 10px 35px;
 
     /* padding: top right bottom left; */
     /* padding-top: 10px;
@@ -72,22 +87,56 @@ body {
 }
 
 
-.hotel {
+#icone-hotel a {
+    padding-left: 45px;
     background-image: url(../images/hotel.png);
     background-position: 10px 50%;
     /* background-position: x y; */
     background-repeat: no-repeat;
-    background-size: 25%;
+    background-size: 25% 25%;
     /* background-size: width height; */
 }
 
+#icone-aviao a {
+    padding-left: 45px;
+    background-image: url(../images/aviao.png);
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    background-size: 15%;
+}
+
+#icone-pacote a {
+    background-image: url(../images/pacote.png);
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+
+#icone-comparativo  a {
+    background-image: url(../images/comparativo.png);
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    background-size: 15%;
+}
+
+#icone-contato a {
+    background-image: url(../images/contato.png);
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+
 .banner {
-    margin: 82.5px 0 50px 0;
+    
+    background-color: blanchedalmond;
+}
+
+.banner .container {
+    margin: 82.5px auto 50px auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: blanchedalmond;
 }
 
 .col-esquerda,
@@ -106,7 +155,11 @@ body {
     font-size: 80px;
 }
 
-.col-esquerda p {
+.banner .col-esquerda {
+    max-width: 60%;
+}
+
+.banner .col-esquerda p {
     font-size: 20px;
 }
 
@@ -119,19 +172,33 @@ body {
 .ofertas {
     margin-bottom: 50px;
     display: flex;
-    gap: 50px;
+    gap: 20px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
+.ofertas h2,
+.ofertas p {
+    margin-bottom: 10px;
+}
+
 .espacamento {
     width: 50%;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.caixinha {
+    transition: all ease-in-out 250ms; 
+}
+
+.caixinha:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .ofertas .col-esquerda {
@@ -139,7 +206,21 @@ body {
 }
 
 .ofertas .col-direita {
-    background-color: cadetblue;
+    background-color: rgb(227, 219, 177);
+}
+
+.ofertas .foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    display: inline-block;
 }
 
 .passo-a-passo {
